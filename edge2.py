@@ -19,4 +19,4 @@ dataset2_y = y_train[3000:]
 model.fit(dataset2_x, dataset2_y, epochs=10, batch_size=200, verbose=2)
 scores = model.evaluate(X_test, y_test, verbose=0)
 print("Baseline Error: %.2f%%" % (100-scores[1]*100))
-model.save("edge1.h5")
+model.save("edge2.h5")
